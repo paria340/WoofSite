@@ -217,3 +217,13 @@ footer div{
     object-fit: contain;
     
 }
+
+@media(max-width: 480px){
+    body{
+        background-size: cover;
+    }
+    .wrapper{
+        width: 90%;
+    }
+    
+}

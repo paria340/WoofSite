@@ -45,6 +45,7 @@ dogApp.factAjaxRequest = function(){
     return factPromise;
 }
 
+
 dogApp.imageAjaxRequest = function(imageId){
 
     const imagePromise = $.ajax({
@@ -127,9 +128,14 @@ dogApp.init = function () {
 
     $('form').on('submit', function(event){
         event.preventDefault();
-        dogApp.displayAll();
-        dogApp.displayFact();
-        $('section').empty();
+        const searchedTerm = $('#Breed').val()
+        if(searchedTerm !== ""){
+            $('section').empty();
+            dogApp.displayAll();
+            dogApp.displayFact();
+        }else{
+            alert("you is an idiot")
+        }
     })
 }
 
