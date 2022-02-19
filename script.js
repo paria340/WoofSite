@@ -134,7 +134,7 @@ dogApp.init = function () {
             dogApp.displayAll();
             dogApp.displayFact();
         }else{
-            alert("you is an idiot")
+            alert("Please complete the form!")
         }
     })
 }
